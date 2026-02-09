@@ -5,10 +5,10 @@ from tqdm import tqdm
 
 # --- CONFIGURATION ---
 # 1. Path to your predictions file
-PREDICTIONS_FILE = r"C:\Users\nithi\Documents\Semester 8\Deep Learning for NLP\Journal Paper\Docspider Dataset\docspider_predictions_mistral7b.json"
+PREDICTIONS_FILE = r"docspider_predictions.json"
 
 # 2. MongoDB Connection String
-MONGO_URI = "mongodb://localhost:27017"
+MONGO_URI = ""
 
 # 3. Path to Mongosh (FIXED with 'r' for raw string)
 MONGO_SHELL_CMD = r"C:\mongosh-2.5.7-win32-x64\mongosh-2.5.7-win32-x64\bin\mongosh.exe"
@@ -147,4 +147,5 @@ print(f"❌ Incorrect: {total_count - correct_count}")
 print(f"⚠️ Errors:    {execution_errors}")
 print("-" * 40)
 print(f"🏆 ACCURACY:  {accuracy:.2f}%")
+
 print("="*40)
